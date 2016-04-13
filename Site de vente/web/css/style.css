@@ -1603,3 +1603,28 @@ body {
     width: 100%;
     border: 2pc solid red;
 }
+
+.myButton {
+	background-color:#383838;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #383838;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial, Verdana;
+	font-size:15px;
+	padding:16px 40px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background-color:#ad1a07;
+    border-color: #ad1a07;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+    
+}
+
