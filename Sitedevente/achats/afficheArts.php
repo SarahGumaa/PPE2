@@ -1,4 +1,4 @@
-<?php include("../assets/header3.php"); ?>
+<?php include("../assets/header.php"); ?>
 <div class="header_slide">
     <div class="header_bottom_left">				
         <div class="categories">

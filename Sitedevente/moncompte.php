@@ -1,4 +1,4 @@
-<?php include("assets/header4.php");?>  
+<?php include("assets/header.php");?>  
 <div class="main">
     <div class="content">
         <div class="content_top">
@@ -13,7 +13,7 @@
         <div class="section group">
             <div class="col span_1_of_3">
                 <img src="web/images/image-de-profil-2.jpg" width=70% height=50%/><br><br><br>
-                <a href="#" class="myButton">Modifié</a>
+                <a href="#" class="myButton">Modifier</a>
             </div>
             <div class="col span_1_of_3">
                 <br><h3>Pseudo</h3><br>
