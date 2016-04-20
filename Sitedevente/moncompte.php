@@ -1,6 +1,6 @@
 <?php include("assets/header.php");?>  
 <div class="main">
-    <div class="content">
+    <div class="content"><br><br>
         <div class="content_top">
             <div class="heading">
                 <h3>MON COMPTE</h3>
@@ -9,21 +9,52 @@
 
             </div>
             <div class="clear"></div>
-        </div>
+        </div><br><br>
         <div class="section group">
             <div class="col span_1_of_3">
+<<<<<<< HEAD:Sitedevente/moncompte.php
                 <img src="web/images/image-de-profil-2.jpg" width=70% height=50%/><br><br><br>
                 <a href="#" class="myButton">Modifier</a>
+=======
+                <img src="web/images/image-de-profil-2.jpg" style="border:1px solid grey;" width=70% height=50%/><br><br><br>
+                <br><br><a href="#" style="text-decoration:none;">Mes achats</a><br><br><br><br><br><br><br>
+                <a href="#" class="myButton" style="margin-top:1%;">Modifiez la photo</a>
+>>>>>>> origin/master:Site de vente/moncompte.php
             </div>
             <div class="col span_1_of_3">
-                <br><h3>Pseudo</h3><br>
-                <br><h3>Prenom</h3><br><br>
-                <h3>Nom</h3><br><br>
-                <h3>Mail</h3><br><br>
+                <div class="contact-form">
+                    <form method="post" action="contact-post.php"><br><br>
+                        <div>
+                            <span><label><h3>Nom :</h3></label></span>
+                            <span><input name="surname" type="text" class="textbox" ></span>
+                        </div><br><br>
+                        <div>
+                            <span><label><h3>Prénom :</h3></label></span>
+                            <span><input name="firstname" type="text" class="textbox" ></span>
+                        </div><br><br>
+                        <div>
+                            <span><label><h3>Mail :</h3></label></span>
+                            <span><input name="email" type="text" class="textbox" ></span>
+                        </div><br><br>
+                        <a href="#" class="myButton">Modifiez les informations</a>
+                    </form>
+                </div>
             </div>
             <div class="col span_1_of_3">
-                <br><br><a href="#" style="text-decoration:none;">Mes achats</a><br><br><br><br><br><br>
-                <a href="#" style="text-decoration:none;">Mot passe oublié</a><br><br>
+                <div class="contact-form">
+                    <form method="post" action="contact-post.php">
+                        <h3><u>Modifiez votre mot de passe :</u></h3><br><br>
+                        <div>
+                            <span><label>Nouveau mot de passe :</label></span>
+                            <span><input name="password" type="text" class="textbox" ></span>
+                        </div><br><br>
+                        <div>
+                            <span><label>Retapez le nouveau mot de passe :</label></span>
+                            <span><input name="password" type="text" class="textbox" ></span>
+                        </div><br><br><br><br><br><br><br><br>
+                        <a href="#" class="myButton" style="margin-top:2%;">Modifiez le mot de passe</a>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
