@@ -1,9 +1,10 @@
-<?php include("../assets/header3.php"); ?>
+<?php include("assets/header.php"); ?>
 <div class="header_slide">
     <div class="header_bottom_left">				
         <div class="categories">
             <ul>
                 <h3>Catégories</h3>
+                <!-- lien vers différente catégories -->
                 <li><a href="categorie/categorie.php">Multimédia</a></li>
                 <li><a href="categorie/categorie2.php">Fournitures</a></li>
                 <li><a href="categorie/categorie3.php">Meubles</a></li>
@@ -15,6 +16,7 @@
     </div>
     <div class="header_bottom_right">					 
         <!--début classement -->
+        
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -61,6 +63,7 @@
                 </tr>
             </tbody>
         </table>
+        
 
 
         <!--fin classement -->
@@ -68,4 +71,4 @@
     <div class="clear"></div>
 </div>
 <!-- footer -->
-<?php include("../assets/footer.php"); ?>
+<?php include("assets/footer.php"); ?>

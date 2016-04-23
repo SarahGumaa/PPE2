@@ -56,6 +56,7 @@
                             <div class="features_list">
                                 <h4>La plupart des meubles nécessaire pour l'installation de votre entreprise disponible sur notre site !</h4>							               
                             </div>
+
                             <a href="categorie/categorie3.php" class="button">Acheter maintenant</a>
                         </div>	
                         <div class="clear"></div>				

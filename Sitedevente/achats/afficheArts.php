@@ -1,4 +1,4 @@
-<?php include("../assets/header.php"); ?>
+<?php include("assets/header.php"); ?>
 <div class="header_slide">
     <div class="header_bottom_left">				
         <div class="categories">
@@ -68,4 +68,4 @@
     <div class="clear"></div>
 </div>
 <!-- footer -->
-<?php include("../assets/footer.php"); ?>
+<?php include("assets/footer.php"); ?>

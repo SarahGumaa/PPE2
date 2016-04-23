@@ -7,6 +7,7 @@
     <link href="web/css/slider.css" rel="stylesheet" type="text/css" media="all"/>
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="web/images/favi.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <script type="text/javascript" src="web/js/jquery-1.7.2.min.js"></script> 
     <script type="text/javascript" src="web/js/move-top.js"></script>
     <script type="text/javascript" src="web/js/easing.js"></script>
@@ -36,39 +37,12 @@
 
         <div class="cart">
 
-            <p><span>Panier</span><div id="dd" class="wrapper-dropdown-2"> 0 produit(s) - 0.00€
+            <a href="../sitedevente/basket.php"><p><span>Panier</span><div id="dd" class="wrapper-dropdown-2"> 0 produit(s) - 0.00€
             <ul class="dropdown">
-                <li>Vous n'avez aucun produits dans votre panier</li>
-            </ul></div></p>
+                
+                </ul></div></p></a>
     </div>
-    <script type="text/javascript">
-        function DropDown(el) {
-            this.dd = el;
-            this.initEvents();
-        }
-        DropDown.prototype = {
-            initEvents : function() {
-                var obj = this;
 
-                obj.dd.on('click', function(event){
-                    $(this).toggleClass('active');
-                    event.stopPropagation();
-                });	
-            }
-        }
-
-        $(function() {
-
-            var dd = new DropDown( $('#dd') );
-
-            $(document).click(function() {
-
-                $('.wrapper-dropdown-2').removeClass('active');
-            });
-
-        });
-
-    </script>
     <div class="clear"></div>
     </div>
 <div class="header_bottom">
