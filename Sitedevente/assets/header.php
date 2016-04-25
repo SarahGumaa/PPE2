@@ -1,12 +1,12 @@
 <!DOCTYPE HTML>
 <head>
-    <title>Black Mister - Acceuil</title>
+    <title>Black Mister</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="web/css/style.css" rel="stylesheet" type="text/css" media="all"/>
     <link href="web/css/slider.css" rel="stylesheet" type="text/css" media="all"/>
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="web/images/favi.png" />
+    <link rel="icon" href="../web/images/favi.png" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <script type="text/javascript" src="web/js/jquery-1.7.2.min.js"></script> 
     <script type="text/javascript" src="web/js/move-top.js"></script>
@@ -37,10 +37,8 @@
 
         <div class="cart">
 
-            <a href="../sitedevente/basket.php"><p><span>Panier</span><div id="dd" class="wrapper-dropdown-2"> 0 produit(s) - 0.00€
-            <ul class="dropdown">
-                
-                </ul></div></p></a>
+            <a href="../sitedevente/basket.php"><p><span>Panier</span> 0 produit(s) - 0.00€
+                </p></a>
     </div>
 
     <div class="clear"></div>

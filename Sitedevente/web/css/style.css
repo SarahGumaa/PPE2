@@ -1627,4 +1627,24 @@ body {
 	top:1px;
     
 }
+.categ {
+    background-color: grey;
+    border-radius: 10px;
+    height: 240px;
+}
+.ssCateg {
+    background-color: black;
+    border-radius: 10px;
+    height: 100px;
+    transition: background 0.3s;
 
+}
+.ssCateg:hover {
+    background-color: #CC3636;
+    border-radius: 10px;
+    height: 100px;
+    transition: background 0.3s;
+}
+.espace {
+    height: 20px;
+}

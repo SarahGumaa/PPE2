@@ -26,39 +26,39 @@
             </thead>
             <tbody>
                 <tr>
-                    <td><a href=""><img src="../web/images/art.png" class="col-md-5 col-xs-6" alt=""></a></td>
+                    <td><a href=""><img src="web/images/art.png" class="col-md-5 col-xs-6" alt=""></a></td>
                     <td><h4><a href="">Titre article 1 </a><br><small>Post quorum necem nihilo lenius ferociens Gallus ut leo cadaveribus pastus multa huius modi scrutabatur.</small></h4></td>
-                    <td><img src="../web/images/dispo.png" class="col-md-3 col-xs-6" alt=""></td>
+                    <td><img src="web/images/dispo.png" class="col-md-3 col-xs-6" alt=""></td>
                     <td><h2>22€</h2></td>
                 </tr>
                 <tr>
-                    <td><a href=""><img src="../web/images/art.png" class="col-md-5 col-xs-6" alt=""></a></td>
+                    <td><a href=""><img src="web/images/art.png" class="col-md-5 col-xs-6" alt=""></a></td>
                     <td><h4><a href="">Titre article 1 </a><br><small>Post quorum necem nihilo lenius ferociens Gallus ut leo cadaveribus pastus multa huius modi scrutabatur.</small></h4></td>
-                    <td><img src="../web/images/dispo.png" class="col-md-3 col-xs-6" alt=""></td>
+                    <td><img src="web/images/dispo.png" class="col-md-3 col-xs-6" alt=""></td>
                     <td><h2>30€</h2></td>
                 </tr>
                 <tr>
-                     <td><a href=""><img src="../web/images/art.png" class="col-md-5 col-xs-6" alt=""></a></td>
+                     <td><a href=""><img src="web/images/art.png" class="col-md-5 col-xs-6" alt=""></a></td>
                     <td><h4><a href="">Titre article 1 </a><br><small>Post quorum necem nihilo lenius ferociens Gallus ut leo cadaveribus pastus multa huius modi scrutabatur.</small></h4></td>
-                    <td><img src="../web/images/nonDispo.jpg" class="col-md-3 col-xs-6" alt=""></td>
+                    <td><img src="web/images/nonDispo.jpg" class="col-md-3 col-xs-6" alt=""></td>
                     <td><h2>55€</h2></td>
                 </tr>
                 <tr>
-                     <td><a href=""><img src="../web/images/art.png" class="col-md-5 col-xs-6" alt=""></a></td>
+                     <td><a href=""><img src="web/images/art.png" class="col-md-5 col-xs-6" alt=""></a></td>
                     <td><h4><a href="">Titre article 1 </a><br><small>Post quorum necem nihilo lenius ferociens Gallus ut leo cadaveribus pastus multa huius modi scrutabatur.</small></h4></td>
-                    <td><img src="../web/images/dispo.png" class="col-md-3 col-xs-6" alt=""></td>
+                    <td><img src="web/images/dispo.png" class="col-md-3 col-xs-6" alt=""></td>
                     <td><h2>10€</h2></td>
                 </tr>
                 <tr>
-                     <td><a href=""><img src="../web/images/art.png" class="col-md-5 col-xs-6" alt=""></a></td>
+                     <td><a href=""><img src="web/images/art.png" class="col-md-5 col-xs-6" alt=""></a></td>
                     <td><h4><a href="">Titre article 1 </a><br><small>Post quorum necem nihilo lenius ferociens Gallus ut leo cadaveribus pastus multa huius modi scrutabatur.</small></h4></td>
-                    <td><img src="../web/images/nonDispo.jpg" class="col-md-3 col-xs-6" alt=""></td>
+                    <td><img src="web/images/nonDispo.jpg" class="col-md-3 col-xs-6" alt=""></td>
                     <td><h2>28€</h2></td>
                 </tr>
                 <tr>
-                     <td><a href=""><img src="../web/images/art.png" class="col-md-5 col-xs-6" alt=""></a></td>
+                     <td><a href=""><img src="web/images/art.png" class="col-md-5 col-xs-6" alt=""></a></td>
                     <td><h4><a href="">Titre article 1 </a><br><small>Post quorum necem nihilo lenius ferociens Gallus ut leo cadaveribus pastus multa huius modi scrutabatur.</small></h4></td>
-                    <td><img src="../web/images/nonDispo.jpg" class="col-md-3 col-xs-6" alt=""></td>
+                    <td><img src="web/images/nonDispo.jpg" class="col-md-3 col-xs-6" alt=""></td>
                     <td><h2>20€</h2></td>
                 </tr>
             </tbody>
