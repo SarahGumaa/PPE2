@@ -1,0 +1,55 @@
+<?php
+                    if(isset($_GET['cat']) and $_GET['cat'] <= 3){
+                    ?>
+                    
+                    <h3><?php echo strtoupper(Get_Cat_Description($_GET['cat']));?></h3>
+                    <h4>Les sous-Cat&eacute;gories:</h4>
+
+                    <p>
+
+                        <?php
+
+                        include_once("modul/affCat.php");
+
+                        ?>
+
+                    </p>
+                    
+                    <?php
+                    }
+                    if(isset($_GET['cat']) and $_GET['cat'] > 3 ){
+                        ?>
+                        <h3><?php echo strtoupper(Get_Cat_Description($_GET['cat']));?></h3>
+                        <h4>Les produit </h4>
+
+                        <p>
+
+                            <?php
+
+                        include_once("affArts.php");
+
+                            ?>
+
+                        </p>
+                        <?php
+
+                    }elseif(isset($_GET['art'])){
+
+                        ?>
+                        
+
+                        <h3><?php echo strtoupper(Get_Art_ref($_GET['art']));?></h3>
+
+                        <p>
+
+                            <?php
+
+                        include_once("modul/affArt.php");
+
+
+                            ?>	
+
+                        </p>
+                        <? }elseif(isset($_GET[''])){
+
+                        ?>
