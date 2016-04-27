@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!isset($_SESSION['login'])) {
+	header ('Location:log.php');
+	exit();
+}
+?>
 <!DOCTYPE HTML>
 <head>
     <title>Black Mister</title>
@@ -23,6 +30,7 @@
         <div class="account_desc">
 
             <ul>
+                <p>Bienvenue <?php echo htmlentities(trim($_SESSION['login'])); ?> !<br /></p>
                 <li><a href="moncompte.php">Mon compte</a></li>
                 <li><a href="log.php">Deconnexion</a></li>
             </ul>
