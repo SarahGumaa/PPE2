@@ -1,11 +1,8 @@
 <?php
-	session_start();
-	session_unset();
-	session_destroy();
-	
+session_start();
+session_unset();
+session_destroy();
+header('Location:./log.php');
+exit();
 ?>
-<script language="javascript" type="text/javascript">
-                      <!--
-                      window.location.replace("../log.php");
-					-->
-</script>
+

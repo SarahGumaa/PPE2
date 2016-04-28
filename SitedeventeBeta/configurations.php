@@ -34,7 +34,7 @@ function Get_Art_ref($art){
 
    		$cnx = Connection_mySql();
 
-		mysqli_select_db($cnx,"base v1") or die("erreur de connexion a la base de donnees");
+		mysqli_select_db($cnx,"base") or die("erreur de connexion a la base de donnees");
 
 		$query = 'SELECT designation FROM `produit` WHERE `idProd` = '.$art.';';
 
