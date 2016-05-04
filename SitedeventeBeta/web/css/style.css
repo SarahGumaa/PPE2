@@ -1622,9 +1622,5 @@ body {
 	background-color:#ad1a07;
     border-color: #ad1a07;
 }
-.myButton:active {
-	position:relative;
-	top:1px;
-    
-}
+
 

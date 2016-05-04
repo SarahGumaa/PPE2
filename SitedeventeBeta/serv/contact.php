@@ -17,7 +17,7 @@
                         <span><textarea name="userMsg"> </textarea></span>
                     </div>
                     <div>
-                        <span><input type="submit" value="Envoyer"  class="myButton"></span>
+                        <button type="button" class="btn btn-danger col-md-offset-9 col-md-3">Envoyer</button>
                     </div>
                 </form>
             </div>

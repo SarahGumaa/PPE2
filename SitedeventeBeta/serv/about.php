@@ -6,7 +6,7 @@
             <p> La Maison des Ligues de Lorraine (M2L) a pour mission de fournir des espaces et des services aux différentes ligues sportives régionales et à d’autres structures hébergées. 
                 La M2L est une structure financée par le Conseil Régional de Lorraine dont l'administration est déléguée au Comité Régional Olympique et Sportif de Lorraine (CROSL). <p>
         </div>
-        <div class="col_1_of_3 span_1_of_3">
+        <div class="col_1_of_3 span_2_of_3">
             <h3>Informations</h3>
             <div class="history-desc">
                 <p style="text-align:center; font-size:20px"> Statue juridique </p>
@@ -16,7 +16,7 @@
                     Le CROSL est une association financée par le ministère via le CNDS (Centre National de Développement du Sport).</p>
                 <div class="clear"></div>
             </div> 
-            <div class="col_1_of_3 span_1_of_3">
+            <div class="col_1_of_3 span_3_of_3">
                 <h3>Locaux</h3>
                 <p>Le site se compose de quatre bâtiments, dont deux dotés de quatre étages et donc de 5 niveaux (les bâtiments A et C) et deux de plain-pied (les bâtiments B et D) dotés d’un seul rez-de-chaussée. Les bâtiments C et D sont neufs. Les bâtiments A et B datent d'une quinzaine d'années. Les étages des bâtiments A et C hébergent les bureaux des ligues locataires et le rez-de-chaussée des quatre bâtiments héberge des espaces mutualisés : un amphithéâtre de 200 places avec une régie, 8 salles de réunion de 12 à 50 places, un hall d'accueil, une salle de convivialité et son office traiteur, ainsi qu'une salle de formation multimédia dotée de 24 postes. On y trouve également la partie « accueil » des neuf bureaux de l'administration de la M2L. L’autre partie se trouve au premier étage du bâtiment C.</p>
                 <div class="list">

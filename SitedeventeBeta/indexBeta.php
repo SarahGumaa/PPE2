@@ -32,22 +32,22 @@ include_once("configurations.php");
                     }
                 }elseif(isset($_GET['art'])){
 
-                        ?>
-                        
-
-                        <h3><?php echo strtoupper(Get_Art_ref($_GET['art']));?></h3>
-
-                        <p>
-
-                            <?php
-
-                        include_once("modul/affArt.php");
+                ?>
 
 
-                            ?>	
+                <h3><?php echo strtoupper(Get_Art_ref($_GET['art']));?></h3>
 
-                        </p>
-                 <?php }else{
+                <p>
+
+                    <?php
+
+                    include_once("modul/affArt.php");
+
+
+                    ?>	
+
+                </p>
+                <?php }else{
                 ?>
                 <nav class="main_nav">
                     <div class="categories">
@@ -55,18 +55,18 @@ include_once("configurations.php");
                             <h3>Catégories</h3>
 
                             <?php
-                            $cnx = Connection_mySql();
+                    $cnx = Connection_mySql();
 
-                            mysqli_select_db($cnx,"base v1") or die("erreur de connexion a la base de donnees");
-                            $query = 'SELECT * FROM `categorie` WHERE `supCat`=1 AND `idCat` <> 1';
-                            $result = mysqli_query($cnx,$query) or die("erreur!!");
+                    mysqli_select_db($cnx,"base v1") or die("erreur de connexion a la base de donnees");
+                    $query = 'SELECT * FROM `categorie` WHERE `supCat`=1 AND `idCat` <> 1';
+                    $result = mysqli_query($cnx,$query) or die("erreur!!");
 
-                            while($row = mysqli_fetch_row($result)){
-                                echo "<li><a href=\"".$_SERVER['PHP_SELF']."?cat=".$row[0]."\">".strtoupper($row[1])."</a></li>";
-                            }
+                    while($row = mysqli_fetch_row($result)){
+                        echo "<li><a href=\"".$_SERVER['PHP_SELF']."?cat=".$row[0]."\">".strtoupper($row[1])."</a></li>";
+                    }
 
-                            mysqli_close($cnx);
-                                    ?>
+                    mysqli_close($cnx);
+                            ?>
 
                         </ul>
                     </div>					
@@ -75,7 +75,7 @@ include_once("configurations.php");
                     <?php
                     if(isset($_GET['cat']) and $_GET['cat'] <= 3){
                     ?>
-                    
+
                     <h3><?php echo strtoupper(Get_Cat_Description($_GET['cat']));?></h3>
                     <h4>Les sous-Cat&eacute;gories:</h4>
                     <p>
@@ -83,7 +83,7 @@ include_once("configurations.php");
                         include_once("modul/affCat.php");
                         ?>
                     </p>
-                    
+
                     <?php
                     }else{
                     ?>
@@ -98,14 +98,14 @@ include_once("configurations.php");
 
                             <?php
 
-                        include_once("affArts.php");
+                            include_once("affArts.php");
 
                             ?>
 
                         </p>
                         <?php
 
-                    }else{
+                        }else{
                         ?>
                         <div class="slider">					     
                             <div id="slider">
@@ -157,7 +157,7 @@ include_once("configurations.php");
                             </div>
                             <div class="clear"></div>					       
                         </div> 
-                         <?php
+                        <?php
                         }
                         ?>
                     </div>     
@@ -231,10 +231,10 @@ include_once("configurations.php");
                             </div>
                         </div>
                     </div>
-                         <?php
-                        }
-                    
-                        ?>
+                    <?php
+                    }
+
+                    ?>
                 </section>
                 <?php
                 }
