@@ -1648,3 +1648,13 @@ body {
 .espace {
     height: 20px;
 }
+
+#lien_mes_achats {
+	color:#383838;
+	font-size:24px;
+}
+
+#lien_mes_achats:hover {
+	color:#ad1a07;
+	font-size:25px;
+}
