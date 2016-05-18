@@ -6,6 +6,7 @@
 <link href="font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
 <link rel="icon" href="../web/images/favi.png" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link type="text/css" href="auth-style.css" rel="stylesheet"/>
 <script type="text/javascript" src="web/js/jquery-1.7.2.min.js"></script> 
 <script type="text/javascript" src="web/js/move-top.js"></script>
 <script type="text/javascript" src="web/js/easing.js"></script>
