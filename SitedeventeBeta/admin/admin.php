@@ -1,3 +1,13 @@
+<?php
+session_start();
+if (!isset($_SESSION['login'])) {
+    header ('Location:../administration/assets/logAdmin.php');
+     
+    exit();
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -10,6 +20,7 @@
             <div class="contour col-md-6 col-md-offset-3">
                 <a href="admin.php"><h1><img class="col-md-offset-3" src="../web/images/logo.png" alt=""></a><small>administration</small></h1>
                 <legend></legend>
+                    <li><a href="../assets/logout.php">Deconnexion</a></li>
                 <div class="menu col-md-2">
                     <a href=""><h3 style="color:black">Menu</h3></a>
                     <legend></legend>

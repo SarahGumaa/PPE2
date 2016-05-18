@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once("configurations.php");
 ?>
 <!DOCTYPE HTML>
@@ -14,11 +15,16 @@ include_once("configurations.php");
                 if(isset($_GET['serv'])){
 
                     switch($_GET['serv']){
-                        case 1 : include_once("serv/about.php");
+                        case 1 : require_once("serv/about.php");
                             break;
 
-                        case 2 : include_once("serv/contact.php");
+                        case 2 : require_once("serv/contact.php");
                             break;
+
+                        case 3 : require_once("serv/contactpost.php");
+                            break;
+                            
+                        case 4 : echo "QWERTY"; break;
                     }
                 }
                 elseif(isset($_GET['user'])){

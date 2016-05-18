@@ -10,38 +10,80 @@
         <link rel="stylesheet" href="../web/css/logAdmin.css">
         <script type="text/javascript" src="../../web/js/java.js"></script>
         <title>Login</title>
+        
     </head>
     <body>
         <div><img src="../../web/images/logo.png" alt="blackmister"></div>
         <div class="col-md-offset-5 col-xs-offset-2">
-            <div class="logo">Identification</div>
+            <div class="logo">Identification Administrateur</div>
             <div class="login-form-1">
-                <form id="login-form" class="text-left">
+                <form id="login-form" class="text-left" action="logAdmin.php" method="post">
                     <div class="login-form-main-message"></div>
                     <div class="main-login-form">
                         <div class="login-group">
                             <div class="form-group">
                                 <label for="lg_username" class="sr-only">Nom de compte</label>
-                                <input type="text" class="form-control" id="lg_username" name="lg_username" placeholder="pseudo">
+                                <input type="text" class="form-control" id="lg_username" name="pseudo" placeholder="pseudo">
                             </div>
                             <div class="form-group">
                                 <label for="lg_password" class="sr-only">Mot de passe</label>
-                                <input type="password" class="form-control" id="lg_password" name="lg_password" placeholder="mot de passe">
+                                <input type="password" class="form-control" id="lg_password" name="password" placeholder="mot de passe">
                             </div>
+                            <?php
+                                // on teste si le visiteur a soumis le formulaire de connexion
+                                if (isset($_POST['connexion']) && $_POST['connexion'] == 'Connexion') {
+
+                                if ((isset($_POST['pseudo']) && !empty($_POST['pseudo'])) && (isset($_POST['password']) && !empty($_POST['password']))) {
+
+                                    $base = mysqli_connect ('localhost', 'root', '', 'base v1');
+                                    //mysqli_select_db ("essaie", $base)  or die("erreur de connexion a la base de donnees");
+
+                                    // on teste si une entrée de la base contient ce couple login / pass
+                                    $sql = 'SELECT * FROM administrateur WHERE Pseudo="'.mysqli_real_escape_string($base, $_POST['pseudo']).'" AND Password="'.mysqli_real_escape_string($base, md5($_POST['password'])).'"';
+
+                                    $req = mysqli_query($base, $sql) or die('Erreur SQL !<br />'.$sql.'<br />'.mysqli_error());
+                                    $data = mysqli_fetch_array($req);
+
+                                    mysqli_free_result($req);
+                                    mysqli_close($base);
+
+                                    // si on obtient une réponse, alors l'utilisateur est un membre
+                                    //var_dump($data);exit;
+                                    if ($data != null) {
+                                        session_start();
+                                        $_SESSION['login'] = $data['Pseudo'];
+                                        header('Location: ../../admin/admin.php');
+                                        exit();
+                                    }
+                                    // sinon, alors la, il y a un gros problème :)
+                                    else {
+
+
+                                        echo "<font color=\"red\"> Problème dans la base de données : plusieurs membres ont les mêmes identifiants de connexion.</font>";
+
+                                    }
+                                    
+                                }
+                                else {
+                                    echo  "<font color=\"red\"> Au moins un des champs est vide.</font>";
+                                }
+                            }
+                            ?>
+                            
                             <div class="form-group login-group-checkbox">
                                 <input type="checkbox" id="lg_remember" name="lg_remember">
                                 <label for="lg_remember">Se souvenir de moi</label>
                             </div>
                         </div>
-                        <button type="submit" class="login-button"><img src="../../web/images/valid.png" width="40" alt="validation"></button>
+                        <button type="submit"  name="connexion" value="Connexion" class="login-button"><img src="../../web/images/valid.png" width="40" alt="validation"></button>
                     </div>
                     <div class="etc-login-form">
-                        <p>mot de passe oublié ? <a href="#">cliquez ici</a></p>
+                        <p>mot de passe oublié ? <a href="..">cliquez ici</a></p>
                     </div>
                 </form>
             </div>
         </div>
 
-<!--teste -->
+
     </body>
 </html>

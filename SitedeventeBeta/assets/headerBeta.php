@@ -1,7 +1,8 @@
 <?php
-session_start();
+
 if (!isset($_SESSION['login'])) {
     header ('Location:assets/log.php');
+     //header ('Location:../administration/assets/logAdmin.php');
     exit();
 }
 ?>
@@ -40,14 +41,6 @@ if (!isset($_SESSION['login'])) {
                 <div class="clear"></div>
             </ul>
         </nav>
-        <div class="recherche_p col-md-offset-10">
-
-            <form action="/search" id="searchthis" method="get">
-                <input id="search" name="q" type="text" placeholder="Rechercher" />
-                <input id="search-btn" type="submit" value="Rechercher" />
-            </form>
-
-        </div>
         <div class="clear"></div>
     </div>
 </div>

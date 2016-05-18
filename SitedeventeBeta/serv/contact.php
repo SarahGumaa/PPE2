@@ -3,7 +3,13 @@
         <div class="col span_2_of_3">
             <div class="contact-form">
                 <h2>Formulaire de contact</h2>
-                <form method="post" action="contact-post.php">
+            
+            </br>
+
+                <p></p>
+                <h4>Email: </h4>Pour toute question ou information, n'hésitez pas à contacter notre service client  :
+                    <a href="mailto:sarahgumaa55@gmail.com? subject=contact ">blackmister@gmail.com</a>
+                <!--form method="post" action="?serv=3">
                     <div>
                         <span><label>Nom</label></span>
                         <span><input name="userName" type="text" class="textbox" ></span>
@@ -17,9 +23,9 @@
                         <span><textarea name="userMsg"> </textarea></span>
                     </div>
                     <div>
-                        <button type="button" class="btn btn-danger col-md-offset-9 col-md-3">Envoyer</button>
+                        <button name="submit" class="btn btn-danger col-md-offset-9 col-md-3">Envoyer</button>
                     </div>
-                </form>
+                </form-->
             </div>
         </div>
         <div class="col span_1_of_3">
