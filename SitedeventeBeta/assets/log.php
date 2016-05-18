@@ -61,7 +61,7 @@
                                         echo "<font color=\"red\"> Problème dans la base de données : plusieurs membres ont les mêmes identifiants de connexion.</font>";
 
                                     }
-                                    
+
                                 }
                                 else {
                                     echo  "<font color=\"red\"> Au moins un des champs est vide.</font>";

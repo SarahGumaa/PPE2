@@ -1,39 +1,38 @@
 <br><br>
-<table class="table table-reflow">
+<table class="table">
     <thead>
         <tr>
-            <th>Catégorie</th>
-            <th>Table heading</th>
-            <th>Table heading</th>
-            <th>Table heading</th>
-            <th>Table heading</th>
-            <th>Table heading</th>
-            <th>Table heading</th>
+            <th>Identifiant</th>
+            <th>Nom Catégorie</th>
+            <th>Sous-Catégorie</th>
+            <th>Images</th>
+            <th>Opérations</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <th scope="row">1</th>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-            <td>Table cell</td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Table cell</td>
-            <td>Table cell</td>
+            <th>1</th>
             <td>Table cell</td>
             <td>Table cell</td>
             <td>Table cell</td>
             <td>Table cell</td>
         </tr>
         <tr>
-            <th scope="row">3</th>
+            <th>2</th>
             <td>Table cell</td>
             <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+            <td>Table cell</td>
+        </tr>
+        <tr>
+            <th>4</th>
             <td>Table cell</td>
             <td>Table cell</td>
             <td>Table cell</td>
@@ -41,4 +40,3 @@
         </tr>
     </tbody>
 </table>
-
