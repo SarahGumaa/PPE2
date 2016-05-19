@@ -36,7 +36,7 @@ if (!isset($_SESSION['login'])) {
                     <?php 
                     if(isset($_GET['mode'])) {
                         switch($_GET['mode']) {
-                            case 1 : include_once("includes php/categorie.php");
+                            case 1 : include_once("categorieBeta.php");
                                 break;
                             case 2 : include_once("includes php/produit.php");
                                 break;
