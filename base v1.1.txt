@@ -1,0 +1,61 @@
+administrateurs(
+	idAdmin int(11) auto-inc
+	login	varchar(20)
+	pwd	varchar(20)
+	mail	varchar(50)
+)
+
+produit(
+	idProd		int(11) auto-inc
+	design		varchar(20)
+	prixUnitaire	decimal(5,2)
+	descripRap	tinytext(200)
+	descripDet	text(500)
+	supCat		int(11)fk
+	image		blob ou varchar
+)
+categorie(
+	idCat		int(11) auto-inc
+	nomCat		varchar(20)
+)
+supCategorie(
+	supCat		int(11)
+	nomsupCatCat	varchar(20)
+	image		blob ou varchar
+	idCat		int(11) fk
+)
+employer(
+	idEmp		int(11) auto-inc
+	mailEmp		varchar(50)
+	nomEmp		varcha(20)
+	prenomEmp	varchar(20)
+	photo		blob ou varchar
+	telFixEmp	char(10)
+	telMobEmp	var(10)
+	pseudo		varchar(25)
+	password	varchar(64)
+	idBat		int(11)	//
+	idBur		int(11)	//
+)
+batiment(
+)
+bureau(
+)
+commande(
+)
+contient(
+)
+facture(
+)
+fournnisseur(
+)
+fournit(
+)
+fournitdans(
+)
+livraison(
+)
+
+
+	
+	
