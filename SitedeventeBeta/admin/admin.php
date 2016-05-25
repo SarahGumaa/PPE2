@@ -17,8 +17,8 @@ if (!isset($_SESSION['login'])) {
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
               </head>
         <body>
-            <div class="contour col-md-6 col-md-offset-3">
-                <a href="admin.php"><h1><img class="col-md-offset-3" src="../web/images/logo.png" alt=""></a><small>administration</small></h1>
+            <div class="contour col-md-8 col-md-offset-2">
+                <a href="admin.php"><h1><img class="col-md-offset-3" src="../web/images/logo2.png" alt=""></a><small>administration</small></h1>
                 <legend></legend>
                     <li><a href="../assets/logout.php">Deconnexion</a></li>
                 <div class="menu col-md-2">

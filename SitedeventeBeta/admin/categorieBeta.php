@@ -2,8 +2,8 @@
 include('configuration.inc.php');
 
 $cnx = Connection_mySql();
-mysqli_select_db($cnx,"base v1") or die ("erreur de connexion à la base de donnée - CatAdmin");
-$query = "SELECT * FROM `categorie` WHERE `idCat` <> `supCat`";
+mysqli_select_db($cnx,"basebeta") or die ("erreur de connexion à la base de donnée - CatAdmin");
+$query = "SELECT * FROM `categorie` WHERE `supCat` = 1 LIMIT 5;";
 $result = mysqli_query($cnx,$query) or die ("erreur!! CatAdmin2");
 
 echo "<table class=\"table\">";
@@ -27,7 +27,7 @@ while ($row = mysqli_fetch_row($result)){
     echo "</td>";
     
 $cnx2 = Connection_mySql();
-    mysqli_select_db($cnx2,"base v1") or die ("erreur de connexion à la base de donnée - CatAdmin 3");
+    mysqli_select_db($cnx2,"basebeta") or die ("erreur de connexion à la base de donnée - CatAdmin 3");
 
     $query2 = 'SELECT `nomCat` FROM `categorie` WHERE `idCat` = '.$row[2].';';
 
