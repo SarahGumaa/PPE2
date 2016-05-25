@@ -11,6 +11,7 @@ produit(
 	prixUnitaire	decimal(5,2)
 	descripRap	tinytext(200)
 	descripDet	text(500)
+	QStock		int (10)
 	supCat		int(11)fk
 	image		blob ou varchar
 )
@@ -38,14 +39,27 @@ employer(
 	idBur		int(11)	//
 )
 batiment(
+	idBat		char(1)
+	idBur
 )
 bureau(
+	idBur		int(11)
 )
 commande(
+	idCmd		int(11)
+	dateCmd		date
+	StatueCmd		varchar(20)
+	idclient	int(10)
+	idfacture	int(10)
 )
 contient(
+	idProd		int(11)
+	idCmd		int(11)
+	
 )
 facture(
+	idFacture	int(11)
+	payee		decimal(5,2)
 )
 fournnisseur(
 )
