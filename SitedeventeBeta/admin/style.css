@@ -2,15 +2,15 @@ body {
     background: linear-gradient(to right, red , black);;
 }
 .contour {
-    box-shadow: 0px 0px 100px green;
-    border:2px green solid;
+    box-shadow: 0px 0px 100px black;
+    border:2px black solid;
     height:1000px;
     background-color: linear-gradient(to right, red , black);
     border-radius: 10px;
 }
 .menu {
     border:1px black solid;
-    height: 270px;
+    height: 310px;
     border-radius: 10px;
 }
 .ssMenu:hover {

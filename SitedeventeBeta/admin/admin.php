@@ -6,8 +6,6 @@ if (!isset($_SESSION['login'])) {
     exit();
 }
 ?>
-
-
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -31,6 +29,8 @@ if (!isset($_SESSION['login'])) {
                     <a href="admin.php?mode=3"><h4 class="ssMenu">Fournisseurs</h4></a>
                     <legend></legend>
                     <a href="admin.php?mode=4"><h4 class="ssMenu">Commandes</h4></a>
+                    <legend></legend>
+                    <a href="admin.php?mode=5"><h4 class="ssMenu">Ajouter un client</h4></a>
                 </div>
                 <div class="menu2 col-md-offset-3">
                     <?php 
@@ -43,6 +43,8 @@ if (!isset($_SESSION['login'])) {
                             case 3 : include_once("includes php/fournisseur.php");
                                 break;
                             case 4 : include_once("includes php/commande.php");
+                                break;
+                            case 5 : include_once("includes php/addClient.php");
                                 break;
                         }
                     }
