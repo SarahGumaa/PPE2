@@ -24,7 +24,7 @@ while ($row = mysqli_fetch_row($result)){
     echo "<td>";
     echo "$row[1]";
     echo "</td>";
-    
+
 /*$cnx2 = Connection_mySql();
 mysqli_select_db($cnx2,"basebeta") or die ("erreur de connexion à la base de donnée - CatAdmin 3");
 
@@ -44,15 +44,22 @@ mysqli_select_db($cnx2,"basebeta") or die ("erreur de connexion à la base de do
     echo "<img src=\"../imge/$row[3]\" width=120 height=120></img>";
     echo "</td>";
     echo "<td>";
-    echo "<a href=\"index2.php?mod=1&task=edit&idCat=$row[0]\">";
+    // echo "<a href=\"index2.php?mod=1&task=edit&idCat=$row[0]\">";
    // echo "img src=\"./images/b_edit.png\" alt=\"editer\"></img></a>";
      echo "<br>
-    <button type=\"submit\" name=\"supprimer\">Supprimer</button>";
+    <a href=\"admin.php?mode=1&task=drop&idCat=$row[0]\"><button type=\"submit\" name=\"supprimer\">Supprimer</button></a>";
     echo "<br/>";
-   // echo "<a href=\index2.php?mod=1&task=drop&idCat=$row[0]\">";
+   // echo "";
     echo "</td>";
     echo "</tr>";
 }
 echo "</table";
 mysqli_close($cnx);
+if(isset($_GET['task'])) {
+switch($_GET['task']) {
+case "drop" : include_once("dropcategorieBeta.php");
+break;
+}
+}
 ?>
+<a href="#"></a>
