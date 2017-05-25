@@ -1,8 +1,8 @@
 administrateurs(
 	idAdmin int(11) auto-inc
 	login	varchar(20)
-	pwd	varchar(20)
-	mail	varchar(50)
+	password	varchar(64)
+	mail	varchar(30)
 )
 
 produit(
@@ -13,15 +13,15 @@ produit(
 	descripDet	text(500)
 	QStock		int (10)
 	supCat		int(11)fk
-	image		blob ou varchar
+	image		varchar(20)
 )
 categorie(
 	idCat		int(11) auto-inc
 	nomCat		varchar(20)
 )
 supCategorie(
-	supCat		int(11)
-	nomsupCatCat	varchar(20)
+	idSupCat		int(11)
+	nomSupCat	varchar(20)
 	image		blob ou varchar
 	idCat		int(11) fk
 )
@@ -30,20 +30,19 @@ employer(
 	mailEmp		varchar(50)
 	nomEmp		varcha(20)
 	prenomEmp	varchar(20)
-	photo		blob ou varchar
 	telFixEmp	char(10)
 	telMobEmp	var(10)
 	pseudo		varchar(25)
 	password	varchar(64)
-	idBat		int(11)	//
-	idBur		int(11)	//
+	idBat		int(11) fk //
+	idBur		int(11)	fk //
 )
 batiment(
 	idBat		char(1)
-	idBur
 )
 bureau(
 	idBur		int(11)
+	idBat		char(1) fk
 )
 commande(
 	idCmd		int(11)
